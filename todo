@@ -1,0 +1,35 @@
+# website
+
+architecture based on https://css-tricks.com/how-you-might-build-a-modern-day-webring/
+
+[x] init repo
+[x] create data storage in json file
+[x] create functional backend url
+    [x] next
+    [ ] previous
+    [ ] random
+    [ ] deal with prev for the first and next for the last person in the ring 
+[ ] create site generator
+[ ] make an easy way for people to sign up
+
+
+
+Ok, how do I actually make this? 
+- generate everything serverside (requires hosting :| )
+- generate things clientside (requires js :| )
+
+
+Ok, here's how I'm going to do it. 
+
+flask app.py
+
+
+fuck it, i'm making a flask app and i'll figure everything else out later. 
+
+- membersites.json holds the members list
+- flask: serves a demo. 
+ok, how do you decide what embed to use?
+
+Instead of the iframe, we give a defailt template. 
+
+we send a request to the main server with the hostname embedded.

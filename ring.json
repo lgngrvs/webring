@@ -1,0 +1,18 @@
+[ 
+    { 
+        "name": "Jane's website 1",
+        "url": "helloworld.com",
+        "site admin": "Jane Doe"
+    },
+
+    { 
+        "name": "John's website 2",
+        "url": "example.com",
+        "site admin": "John Doe"
+    },
+    { 
+        "name": "Logan Graves' Website",
+        "url": "logangraves.com",
+        "site admin": "Logan Graves"
+    }
+]
