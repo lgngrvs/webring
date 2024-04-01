@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect
 import json
 import markdown
+from random import randrange
 
 app = Flask(__name__)
 
@@ -27,8 +28,11 @@ def next(host):
     member_index = member["index"]
 
     if get_host_by_url(host) is not None: 
-        return redirect("https://" + str(members[member_index + 1]["url"]), code=302)
-
+        try: 
+            return redirect("https://" + str(members[member_index + 1]["url"]), code=302)
+        except IndexError: 
+            return redirect("https://" + str(members[0]["url"]), code=302)
+    
     return render_template('notinring.html')
 
 @app.route("/prev/<host>")
@@ -37,9 +41,19 @@ def prev(host):
     member_index = member["index"]
 
     if get_host_by_url(host) is not None: 
-        return redirect("https://" + str(members[member_index - 1]["url"]), code=302)
+        try: 
+            return redirect("https://" + str(members[member_index - 1]["url"]), code=302)
+        except IndexError: 
+            return redirect("https://" + str(members[-1]["url"]), code=302)
+
 
     return render_template('notinring.html')
+
+@app.route("/random")
+def random(): 
+    rand_index = randrange(0, len(members))
+    redirect_url = members[rand_index]["url"]
+    return redirect("https://" + redirect_url, code=302)
 
 
 @app.route("/component/<host>")

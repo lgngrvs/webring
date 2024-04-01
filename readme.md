@@ -14,9 +14,8 @@ To get started, (open a pull request to update `ring.json` with your website's i
 
 Once your site is entered into `ring.json`, you can officially join the webring. All you need to do is add links to your site with the url as follows, substituting <url> for your site's url (without the URL scheme, i.e. remove the `https://`): 
 
-```html
-<a href="<THIS WEBRING'S URL>/next/<YOUR SITE'S URL>">Next in webring</a>
-<a href="<THIS WEBRING'S URL>/prev/<YOUR SITE'S URL>">Previous in webring</a>
-```
+`<a href="<THIS WEBRING'S URL>/next/<YOUR SITE'S URL>">Next in webring</a>`
+
+`<a href="<THIS WEBRING'S URL>/prev/<YOUR SITE'S URL>">Previous in webring</a>`
 
 You can visit `<THIS WEBRING'S URL>/component/<YOUR SITE'S URL>` for a preformatted, easy copy-paste `<div>` element you can use as well (recommended).

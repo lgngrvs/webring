@@ -1,14 +1,21 @@
+<link rel="stylesheet" href="/static/architects.css" type="text/css">
 
 <textarea style="width: 500px; height: 200px">
     <style>
         .webring {
             border: 1px solid black;
+            padding: 0.5em 1em;
+            width: fit-content;
+        }
+
+        #webring-controller {
+            text-align: center;
         }
     </style>
 
     <div class="webring">
-        <h2>{{ name }}</h1>
-        <a href="{{ url }}">{{ url }}</a>
+        <p><b>{{ name }}</b> is part of the <a href="tecture.archi">[Tecture]</a> webring.</p>
+        <p id="webring-controller"><a href="/next/{{ url }}">Next</a> | <a href="/random">Random</a>| <a href="/prev/{{ url }}">Previous</a></p>
     </div>
 </textarea>
 <br> 
@@ -19,11 +26,19 @@
 <style>
     .webring {
         border: 1px solid black;
+        padding: 0.5em 1em;
+        width: fit-content;
     }
+
+    #webring-controller {
+        text-align: center;
+    }
+
 </style>
 
 <div class="webring">
-    <h2>{{ name }}</h1>
-    <a href="{{ url }}">{{ url }}</a>
+    <p><b>{{ name }}</b> is part of the <a href="tecture.archi">[Tecture]</a> webring.</p>
+    <p id="webring-controller"><a href="/prev/{{ url }}">← prev</a> | <a href="/random">random</a> | <a href="/next/{{ url }}">next →</a></p>
 </div>
+<br>
 <i>This is not a live preview.</i>

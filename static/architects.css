@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: "Spectral", sans-serif;
+    padding: 3% 18%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 40pt; 
+}
+
+h2 {
+    font-size: 35pt;
+}
+
+p {
+    font-size: 17pt;
+    font-weight: 300;
+}
+
+code {
+    background-color: rgb(247, 247, 247); 
+    border-radius: 0.3em;
+    padding: 3px;
+}
+
+#background-div {
+    position: fixed;
+    top: -45%;
+    left: -45%;
+    background: radial-gradient(rgb(212, 173, 115), white, white);
+    height: 90%;
+    width: 90%;
+    z-index: -1;
+}
+
+#foreground-div {
+    position: fixed;
+    bottom: -30%;
+    right: -15%;
+    background: radial-gradient(rgb(205, 183, 149), transparent, transparent);
+    height: 60%;
+    width: 70%;
+}
