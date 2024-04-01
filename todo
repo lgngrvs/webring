@@ -6,11 +6,17 @@ architecture based on https://css-tricks.com/how-you-might-build-a-modern-day-we
 [x] create data storage in json file
 [x] create functional backend url
     [x] next
-    [ ] previous
+    [x] previous
     [ ] random
     [ ] deal with prev for the first and next for the last person in the ring 
-[ ] create site generator
-[ ] make an easy way for people to sign up
+[x] create site generator
+[x] make an easy way for people to sign up
+[x] update README
+[x] render README as index.html
+[ ] web design
+[ ] add an index with a preview
+[ ] choose a name & domain for the webring
+
 
 
 

@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect
 import json
+import markdown
 
 app = Flask(__name__)
 
@@ -17,7 +18,8 @@ def get_host_by_url(host):
 
 @app.route("/")
 def home(): 
-    return render_template("example.html")
+    with open("readme.md", "r") as file: 
+        return render_template("example.html", data = markdown.markdown(file.read()))
 
 @app.route("/next/<host>")
 def next(host): 
